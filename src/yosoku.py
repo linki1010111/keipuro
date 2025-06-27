@@ -47,9 +47,9 @@ def yosoku(x,y,z):
                     det[posi-1-i]='d'
         kyokusei=0
         det.reverse()
+        first=2
+        gyaku=1
         for i in range(len(det)):
-            first=2
-            gyaku=1
             if det[i]==2:
                 gyaku=gyaku*(-1)
             elif det[i]==-1:
