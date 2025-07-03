@@ -68,7 +68,7 @@ def process_dictionaries_combined_from_paths(file_paths: list):
                     elif num_syllables == 2:
                         vocabulary = vocabulary_parts[0]
                     else:
-                        vocabulary = vocabulary_parts[0] if vocabulary_parts
+                        vocabulary = vocabulary_parts[0] if vocabulary_parts else ''
 
                     if not vocabulary:
                         continue
