@@ -11,6 +11,7 @@ file_paths = []
 file_paths.append("data/dictionary1.txt")
 file_paths.append("data/dictionary2.txt")
 d = jisho.process_dictionaries_combined_from_paths(file_paths)
+print((["気まずい","n"]in d))
 ds = readdata.load_lines_from_text_file("data/dataset.txt")
 result = yosoku.yosoku(d,ds)
 processed_data = humanread.read("data/human_processed_data.txt")
