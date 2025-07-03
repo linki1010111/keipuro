@@ -1,6 +1,6 @@
-def yosoku(x,y,z):#x辞書１y辞書２z文章
+def yosoku(x,z):#x辞書１y辞書２z文章
     hitei=[['ない',2],['なく',2]]#否定の辞書(否定の場合一旦極性を2にする)
-    dictionarygen=x+y#辞書の結合
+    dictionarygen=x
     dictionary=[]
     for w in dictionarygen:
         if w[1]=='n':
