@@ -2,8 +2,8 @@ import os
 import sys
 import src.trainer as trainer
 
-preprocessed_train_data_path = input("Enter the path for the preprocessed data:")
-model_dump_path_base = input("Enter the path for the directory to save the models:")
+preprocessed_train_data_path = "keipuro/data/processed_train"
+model_dump_path_base = "keipuro/model/"
 
 t = trainer.Trainer()
 X, y = t.load_data(preprocessed_train_data_path)
